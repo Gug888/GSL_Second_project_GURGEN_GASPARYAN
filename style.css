@@ -1,0 +1,185 @@
+:root {
+    --cream: #FBAB7E;
+    --delred: #BA0021;
+    --moregreen: #339933;
+    --wishorange: #ff6400;
+    --white: #ffffff;
+    --orangeyell: #ffb13b;
+    --brown: brown;
+    --bisque: bisque;
+    --gold: #ead027;
+    --yellow: #FAD961;
+    --btn-hover: #f29d17;
+}
+
+body {
+    background: linear-gradient(290deg, var(--cream) 0%, #F7CE68 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.goWishList, .backCatalog {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: var(--orangeyell);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: cursive;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.goWishList:hover, .backCatalog:hover {
+    background-color: var(--btn-hover);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.childDiv {
+    background: linear-gradient(90deg, var(--gold) 0%, var(--orangeyell) 74%);
+    color: var(--white);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.buttonsDiv {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttonsDiv button {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: cursive;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.buttonsDiv .dellBtn {
+    background-color: var(--delred);
+    color: var(--white);
+}
+
+.buttonsDiv .moreBtn {
+    background-color: var(--moregreen);
+    color: var(--white);
+}
+
+.buttonsDiv .wishBtn {
+    background-color: var(--wishorange);
+    color: var(--white);
+}
+
+.buttonsDiv button:hover {
+    transform: scale(1.05);
+}
+
+.ulPaginate {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.lipageList {
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lipageList:hover {
+    background-color: var(--btn-hover);
+    color: var(--white);
+}
+
+.setle {
+    background-color: var(--brown);
+    color: var(--bisque);
+}
+
+.descProduct {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.aboutProductDiv {
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--moregreen);
+}
+
+.backBtn {
+    background-color: var(--wishorange);
+    color: var(--white);
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.removeWish{
+    background-color: var(--delred);
+    color: var(--white);
+}
+.backBtn:hover {
+    background-color: var(--btn-hover);
+}
+
+@media (max-width: 768px) {
+    .users {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .childDiv {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .descProduct {
+        width: 100%;
+    }
+}
