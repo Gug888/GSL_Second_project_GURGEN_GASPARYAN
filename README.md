@@ -30,7 +30,7 @@ Single Page Application (SPA) Logic: The project utilizes a single-page applicat
 1. **💻 Installation:**
 - Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/blackrainbowtest/StationProject2_aram_arakelyan.git
+    git clone git@github.com:Gug888/GSL_Second_project_GURGEN_GASPARYAN.git
     ```
 - Alternatively, you can click the "Code" button at the top of the repository page and select "Download ZIP" to download the repository as a ZIP file.
 
